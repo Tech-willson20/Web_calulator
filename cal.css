@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none  ;
+
+}   
+.box{
+    display: flex;
+    flex-direction: row;
+    
+
+  
+}
+ .container-main{
+    border: 5px solid blue;
+    margin: auto; 
+ }
+#Right{
+    border: 1px dotted;
+    color: #099;
+    width: 30%;
+    height: 700px;
+    float: right;
+    
+
+}
+.Left{
+    border:  2px solid red;
+    color:   #f9f9f9;
+    width: 70%;
+    height: 700px;
+    float: left;
+    background: linear-gradient(to top, #36d1dc,#5b86e5)
+}
+.Left p{
+    letter-spacing: 6px;
+}
+
+
+.container2{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.calculator{
+    background-color: #ecf0f3;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #ffffff,
+                        5px 5px 12px rgba(0,0,0,.16);
+    display: grid;
+    grid-template-columns: repeat(4,70px);
+
+
+}
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    background-color: #ecf0f3;
+    box-shadow: inset -5px -5px 12px #ffffff,
+                    inset 5px 5px 12px rgba(0,0,0,.16);
+    border: none;
+    border-radius: 30px;
+    color: rgb(70,70,70);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding:20px ;
+}
+button{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: #ecf0f3 ;
+    box-shadow: -5px -5px 12px #ffffff,
+                5px 5px 12px rgba(0,0,0,.16);
+    border: none;
+    margin: 8px;
+    font-size: 16px;
+
+}
+.equal{
+    width:115px;
+    border-radius: 40px;
+    background-color: #ecf0f3 ;
+    box-shadow: -5px -5px 12px #ffffff,
+                5px 5px 12px rgba(0,0,0,.16);
+}
+p {
+    margin:30px;
+    font-family: sans-serif;
+    font-size: medium;
+}
+#texth, #textc ,#textn{
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',' sans-seri';
+    font-weight: bold;
+    font-style: oblique;    
+    margin: 0px;
+    
+}
+.me{
+    align-items: center;
+    color: #f9f9f9;
+    font-family: fantasy;
+    font-size: 45px;
+    text-align: center;
+    text-decoration: wavy green 30px;
+    margin-bottom: 15%;
+    
+}
+footer{
+align-items: baseline;
+position: relative;
+animation: mymove 5s infinite;
+}
+@keyframes mymove{
+    from{left: 0px;}
+    to{left: 200px;}
+}
